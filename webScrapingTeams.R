@@ -84,17 +84,17 @@ salaryData$team = "BAL"
 
 #removing non player rows
 
-#batterStats = subset(baseballData, grepl("Name",baseballData$Name) == FALSE) %>%
-              #subset(baseballData, grepl("Team",baseballData$Name) == FALSE) %>%
-              #subset(baseballData, grepl("Rank",baseballData$Name) == FALSE)
+batterStats = subset(baseballData, grepl("Name",baseballData$Name) == FALSE) %>%
+              subset(baseballData, grepl("Team",baseballData$Name) == FALSE) %>%
+              subset(baseballData, grepl("Rank",baseballData$Name) == FALSE)
 
 
-#pitchingSats = pitching2[grepl("Team",pitching2$Name,)==FALSE,] %>%
-               #pitching2[grepl("Name",pitching2$Name,)==FALSE,] %>%
-              # pitching2[grepl("Rank",pitching2$Name,)==FALSE,]
+pitchingSats = pitching2[grepl("Team",pitching2$Name,)==FALSE,] %>%
+               pitching2[grepl("Name",pitching2$Name,)==FALSE,] %>%
+              pitching2[grepl("Rank",pitching2$Name,)==FALSE,]
 
-#subset(pitching2, grepl("Team",pitching2$Name,)==FALSE)
-#subset(pitching2, grepl("Rank",pitching2$Name,)==FALSE)
+subset(pitching2, grepl("Team",pitching2$Name,)==FALSE)
+subset(pitching2, grepl("Rank",pitching2$Name,)==FALSE)
 
 
 #Exporting to text file for tableau
